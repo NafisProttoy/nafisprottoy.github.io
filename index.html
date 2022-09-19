@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/460e37d5be.js" crossorigin="anonymous"></script>
+	<title>Portfolio</title>
+</head>
+<body>
+
+
+	<!-- HEADER SECTION -->
+	<header>
+		<div id="container">
+			<nav>
+				<div class="logo"><a href="#"><span id="n">N</span>AFIS</a></div>
+				
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+		<div class="header-text">
+			<p>Full Stack Developer</p>
+			<h1>Hi, I am <span id="name">Nafis</span> Prottoy!</h1>
+		</div>
+		
+	</header>
+
+
+
+	<!-- ABOUT SECTION -->
+
+	<section class="section-1">
+		<div class="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="./images/user.png" alt="">
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About Me</h1>
+						<p class="aboutme-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A similique minus accusantium sequi porro iure facilis ut veritatis eveniet voluptas odio, ea sunt magni atque suscipit itaque quae alias nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae animi rerum numquam velit ducimus. Dolorum neque ducimus iusto doloribus! Facere assumenda dolore temporibus at eligendi maxime laborum consectetur amet itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. At corrupti quasi itaque numquam deleniti, a consequatur maxime earum sunt quam corporis aut molestias qui ratione minus dolor blanditiis voluptatum! At.</p>
+
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+							<p class="tab-links" onclick="opentab('experience')">Experience</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+
+						<!-- SKILLS -->
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li><span>Front-End Development</span><br>HTML, CSS, JavaScript, JQuery, Bootstrap, Angular, React</li>
+								<li><span>Backend-End Development</span><br>Java, Spring Framework, MySQL database</li>
+								<li><span>Full-Stack Development</span><br>SpringBoot Framework, NoSQL database, MongoDB, REST API</li>
+								<li><span>Other Tools</span><br>Git, GitHub, AJAX, JSON</li>
+							</ul>
+						</div>
+						<!-- EXPERIENCE -->
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li><span>Aug 21 - Feb 22</span><br>Automotive Sales Consultant</li>
+								<li><span>Aug 12 - May 21</span><br>Shift Manager</li>
+								<li><span>June 15 - Jan 21</span><br>Auxiliary Police Officer</li>
+								<li><span>April 15 - July 15</span><br>Financial Analyst Intern</li>
+							</ul>
+						</div>
+						<!-- EDUCATION -->
+						<div class="tab-contents" id="education">
+							<ul>
+								<li><span>LaGuardia Community College</span><br>Associates Degree in Accounting</li>
+								<li><span>Queensborough Community College</span><br>Certificate in Front-End Web Development</li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- SERVICES SECTION -->
+
+
+	<section class="section-2">
+
+		<div class="container">
+			<h1 class="sub-title">Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-brands fa-chrome"></i>
+					<h2>Front-End Development</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veniam soluta! Veniam id exercitationem a pariatur ipsa officiis soluta, eaque error molestias repellat iste labore deserunt libero ipsam reiciendis voluptas!</p>
+					<a href="#">Learn More</a>
+				</div>
+
+				<div>
+					<i class="fa-regular fa-server"></i>
+					<h2>Backend-End Development</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veniam soluta! Veniam id exercitationem a pariatur ipsa officiis soluta, eaque error molestias repellat iste labore deserunt libero ipsam reiciendis voluptas!</p>
+					<a href="#">Learn More</a>
+				</div>
+	
+				<div>
+					<i class="fa-regular fa-laptop"></i>
+					<h2>Full-Stack Development</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veniam soluta! Veniam id exercitationem a pariatur ipsa officiis soluta, eaque error molestias repellat iste labore deserunt libero ipsam reiciendis voluptas!</p>
+					<a href="#">Learn More</a>
+				</div>
+			</div>		
+		</div>
+
+	</section>
+
+	<!-- PORTFOLIO SECTION / MY WORK SECTION -->
+
+	<section class="section-3">
+		<div class="container">
+			<h1 class="sub-title">My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="./images/work-1.png" alt="">
+					<div class="layer">
+						<h3>Student Management System</h3>
+						<p>Student CRUD application management system created in SpringBoot and MySQL database</p>
+						<a href="#">LINK</a>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="./images/work-2.png" alt="">
+					<div class="layer">
+						<h3>Student Management System</h3>
+						<p>Student CRUD application management system created in SpringBoot and MySQL database</p>
+						<a href="#">LINK</a>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="./images/work-3.png" alt="">
+					<div class="layer">
+						<h3>Student Management System</h3>
+						<p>Student CRUD application management system created in SpringBoot and MySQL database</p>
+						<a href="#">LINK</a>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="btn">See More</a>
+		</div>
+
+	</section>
+
+
+	<!-- CONTACT SECTION -->
+
+
+	<script type="text/javascript" src="index.js"></script>
+	
+
+</body>
+</html>
