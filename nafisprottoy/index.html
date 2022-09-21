@@ -11,18 +11,20 @@
 
 
 	<!-- HEADER SECTION -->
-	<header>
+	<header id="header">
 		<div id="container">
 			<nav>
 				<div class="logo"><a href="#"><span id="n">N</span>AFIS</a></div>
 				
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#section-1">About</a></li>
+					<li><a href="#section-2">Services</a></li>
+					<li><a href="#section-3">Portfolio</a></li>
+					<li><a href="#section-4">Contact</a></li>
+					<i class=" fas fa-solid fa-xmark" onclick="closeMenu()"></i>
 				</ul>
+				<i class=" fas fa-solid fa-bars" onclick="openMenu()"></i>
 			</nav>
 
 		</div>
@@ -37,7 +39,7 @@
 
 	<!-- ABOUT SECTION -->
 
-	<section class="section-1">
+	<section id="section-1">
 		<div class="about">
 			<div class="container">
 				<div class="row">
@@ -88,11 +90,11 @@
 		</div>
 	</section>
 
-
+	
 	<!-- SERVICES SECTION -->
 
 
-	<section class="section-2">
+	<section id="section-2">
 
 		<div class="container">
 			<h1 class="sub-title">My Services</h1>
@@ -124,7 +126,7 @@
 
 	<!-- PORTFOLIO SECTION / MY WORK SECTION -->
 
-	<section class="section-3">
+	<section id="section-3">
 		<div class="container">
 			<h1 class="sub-title">My Work</h1>
 			<div class="work-list">
@@ -163,7 +165,7 @@
 
 	<!-- CONTACT SECTION -->
 
-	<section class="section-3">
+	<section id="section-4">
 		<div class="contact">
 			<div class="container">
 				<div class="row">
@@ -182,13 +184,13 @@
 					</div>
 
 					<div class="contact-right">
-						<form >
+						<form name="submit-to-google-sheet">
 							<input type="text" name="name" placeholder="Name" required>
 							<input type="email" name="email" placeholder="Email" required>
 							<textarea name="message"  rows="6" placeholder="Your Message"></textarea>
 							<button type="submit" class="btn btn2">Submit</button>
 						</form>
-						
+						<span id="msg"></span>
 					</div>
 				</div>
 			</div>

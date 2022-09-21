@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: #080808;
@@ -94,7 +97,7 @@ nav ul li a:hover::after{
 
 /* ABOUT SECTION */
 
-.section-1{
+#section-1{
     padding: 80px 10px;
     width: 100%;
     height: 100vh;
@@ -187,7 +190,7 @@ nav ul li a:hover::after{
 
 /* SERVICES SECTION*/
 
-.section-2{
+#section-2{
     margin-top: 3%;
     padding: 80px 10px;
     /* width: 100%;
@@ -244,7 +247,7 @@ nav ul li a:hover::after{
 
 /* PORTFOLIO SECTION */
 
-.section-3{
+#section-3{
     padding: 50px 10px;
 }
 
@@ -406,6 +409,103 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+}
+
+
+/* ---------RESPONSIVE FOR MOBILE SCREEN ------------- */
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        background-image: url(./images/phone-background.png);
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;;
+
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background:#ff004f;
+        position: fixed;
+        top:0;
+        right:-200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+
+    .section-1{
+        margin-bottom: 10%;
+    }
+
+    .section-2{
+        margin-top: 10%;
+    }
+
+
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
 
 
